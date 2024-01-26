@@ -1,0 +1,30 @@
+JAWABAN
+
+1.  create database myshop;
+
+2.  (create table users)
+    create table users (id int PRIMARY KEY AUTO_INCREMENT,name varchar(255), email varchar(255), password varchar(255));
+ 
+    (create table categories)
+    create table categories (id int PRIMARY KEY AUTO_INCREMENT, name varchar(255));
+ 
+    (create table items)
+    create table items (id int PRIMARY KEY AUTO_INCREMENT, name varchar(255), description varchar(255), price int, stock int, category_id int, FOREIGN KEY (category_id) REFERENCES categories(id));
+
+3.  (insert table users)
+    insert into users (name, email, password) values ("John Doe", "john@doe.com", "john123"), ("Jane Doe", "jane@doe.com", "jenita123");
+
+    (insert table categories)
+    insert into categories (name) values ("gadget"), ("cloth"), ("men"), ("women"), ("branded");
+
+    (insert table items)
+    insert into items (name, description, price, stock, category_id) values ("Sumsang b50", "hape keren dari merek sumsang", 4000000, 100, 1), ("Uniklooh", "baju keren dari brand ternama", 500000, 50, 2), ("IMHO Watch", "jam tangan anak yang jujur banget", 2000000, 10, 1);
+
+4.  a. select name, email from users;
+    b1. select * from items where price > 1000000;
+    b2. select * from items where name LIKE ("%sang%");
+    c. select items.*, categories.name as kategory from items left join categories on items.category_id = categories.id;
+
+5. update items set price=2500000 where name="Sumsang b50";
+
+
