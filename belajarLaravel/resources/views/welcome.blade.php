@@ -6,4 +6,5 @@
 
 @section('content')
     <p>Silahkan pilih menu table pada sidebar</p>
+    <p>Silahkan pilih menu Cast pada sidebar</p>
 @endsection

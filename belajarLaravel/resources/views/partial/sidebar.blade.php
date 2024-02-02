@@ -59,6 +59,16 @@
             </li>
           </ul>
         </li>
+
+        <li class="nav-item">
+          <a href="/cast" class="nav-link">
+            <i class="nav-icon fas fa-user-friends"></i>
+            <p>
+              Cast
+              {{-- <i class="right fas fa-angle-left"></i> --}}
+            </p>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
